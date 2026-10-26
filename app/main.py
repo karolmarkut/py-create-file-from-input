@@ -1,6 +1,6 @@
 def main():
     File_name = input("File name: ")
-    with open("{File_name}.txt", "a") as f:
+    with open(f"{File_name}.txt", "a") as f:
         while True:
             tekst = input("Wpisz coś (wpisz 'stop', aby zakończyć): ")
             if tekst == "stop":
