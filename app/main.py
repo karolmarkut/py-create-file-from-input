@@ -5,9 +5,9 @@ def main():
     with open(f"{file_name}", "w") as f:
         while True:
             tekst = input("Enter new line of content: ")
-            f.write(tekst + "\n")
             if tekst == "stop":
                 break
+            f.write(tekst + "\n")
 
 
 if __name__ == "__main__":
