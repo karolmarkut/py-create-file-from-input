@@ -1,5 +1,12 @@
 def main():
-    # write your code here
+    File_name = input("File name: ")
+    with open("{File_name}.txt", "a") as f:
+        while True:
+            tekst = input("Wpisz coś (wpisz 'stop', aby zakończyć): ")
+            if tekst == "stop":
+                break
+            f.write(tekst + "\n")
+        print(f"{File_name} \n, {tekst} \n")
     pass
 
 
